@@ -16,6 +16,7 @@ root.iconphoto(False, tk.PhotoImage(file='padlock.png'))
 text1 = Label(root, text="YOUR FILES HAS BEEN ENCRYPTED!", bg='white', font=("Courier", 55))
 text1.pack(pady=50)
 
+# display image
 img = ImageTk.PhotoImage(file="padlock.png")
 label = tk.Label(root, image=img)
 label.pack()
@@ -32,6 +33,7 @@ entryCode.pack(pady=20)
 btn = tk.Button(root, text="Decrypt", font=('Courier', 50), width=15, bg='#222', fg="white", command=lambda: decrypt())
 btn.pack(pady=50)
 
+# decrypt script
 key = 'test'
 
 def decrypt():
